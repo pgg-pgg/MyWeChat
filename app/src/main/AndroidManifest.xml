@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pgg.mywechatem">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 环信开始 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 环信结束 -->
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:name=".Global.BaseApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activity.MainActivity"/>
+        <activity android:name=".Activity.LoginActivity"/>
+        <activity android:name=".Activity.RegisterActivity"/>
+        <activity android:name=".Activity.FindPasswordActivity"/>
+        <activity android:name=".Activity.WebSafeActivity"/>
+        <activity android:name=".Activity.ChooseCountryActivity"/>
+        <activity android:name=".Activity.ChooseLanguageActivity"/>
+        <activity
+            android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
+            android:theme="@style/ImagePickerThemeFullScreen"/>
+        <activity
+            android:name="com.lzy.imagepicker.ui.ImageBaseActivity"
+            android:theme="@style/ImagePickerThemeFullScreen"/>
+        <activity
+            android:name="com.lzy.imagepicker.ui.ImagePreviewActivity"
+            android:theme="@style/ImagePickerThemeFullScreen"/>
+        <activity android:name=".Activity.Login2Activity"/>
+        <activity android:name=".Activity.CaptureActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.AddFriendActivity"/>
+        <activity android:name=".Activity.AddGroupChatActivity"/>
+        <activity android:name=".Activity.GetMoneyActivity"/>
+        <activity android:name=".Activity.HelpAndFeedbackActivity"/>
+        <activity android:name=".Activity.SearchActivity"/>
+        <activity android:name=".Activity.SearchResultActivity"/>
+        <activity android:name=".Activity.Find_Activity.MomentsActivity"/>
+        <activity android:name=".Activity.Find_Activity.ShakeActivity"/>
+        <activity android:name=".Activity.Find_Activity.ShareMomentsActivity"/>
+        <activity android:name=".Activity.Find_Activity.ChangeBackgroundActivity"/>
+        <activity android:name=".Activity.Find_Activity.ShakeSettingActivity"/>
+        <activity android:name=".Activity.Find_Activity.NearByActivity"/>
+        <activity android:name=".Activity.Profile_Activity.MyInfoActivity"/>
+        <activity android:name=".Activity.Profile_Activity.AlbumActivity"/>
+        <activity android:name=".Activity.Profile_Activity.MoneyActivity"/>
+        <activity android:name=".Activity.Profile_Activity.CollectActivity"/>
+        <activity android:name=".Activity.Profile_Activity.CardBoxActivity"/>
+        <activity android:name=".Activity.Profile_Activity.SettingActivity" />
+        <activity android:name=".Activity.Profile_Activity.ChangeNicknameActivity"/>
+        <activity android:name=".Activity.Profile_Activity.MoreInfoActivity"/>
+        <activity android:name=".Activity.Profile_Activity.MyCodeActivity"/>
+        <activity android:name=".Activity.Profile_Activity.MyLocationActivity"/>
+        <activity android:name=".Activity.Profile_Activity.PayActivity"/>
+        <activity android:name=".Activity.Profile_Activity.DibsActivity"/>
+        <activity android:name=".Activity.Profile_Activity.CardActivity"/>
+        <activity android:name=".Activity.Profile_Activity.MyMessageActivity"/>
+        <activity android:name=".Activity.Profile_Activity.MyDetailInfoActivity"/>
+        <activity android:name=".Activity.ImageViewActivity"/>
+        <activity android:name=".Activity.Chat_Activity.FriendMsgActivity"/>
+        <activity android:name=".Activity.Chat_Activity.GroupSettingActivity"/>
+        <activity android:name=".Activity.Chat_Activity.ChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:windowSoftInputMode="adjustResize|adjustPan"  />
+        <activity android:name=".Activity.Chat_Activity.ContextMenuActivity"/>
+        <activity android:name=".Activity.Profile_Activity.ChangeSignatureActivity"/>
+        <activity android:name=".Activity.Chat_Activity.AddFriendReasonActivity"/>
+        <activity android:name=".Activity.Chat_Activity.GroupListActivity"/>
+        <activity android:name=".View.ShowBigImage"/>
+        <activity android:name=".Activity.Chat_Activity.BaiduMapActivity"/>
+        <activity android:name=".Activity.Chat_Activity.ShowNormalFileActivity"/>
+        <activity android:name=".Activity.Chat_Activity.VoiceCallActivity"/>
+        <activity android:name=".Activity.Chat_Activity.CallActivity"/>
+        <activity android:name=".Activity.Chat_Activity.VideoCallActivity"/>
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data android:name="EASEMOB_APPKEY"  android:value="你的环信Appkey" />
+        <!-- 声明sdk所需的service SDK核心功能-->
+        <service android:name="com.easemob.chat.EMChatService" android:exported="true"/>
+
+
+        <!-- 百度地图所需的service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="你的百度地图的appkey" />
+
+    </application>
+
+</manifest>

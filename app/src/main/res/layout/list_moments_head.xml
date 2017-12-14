@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="280dp">
+
+        <ImageView
+            android:id="@+id/iv_background"
+            android:src="@drawable/user_ba"
+            android:scaleType="centerCrop"
+            android:layout_width="fill_parent"
+            android:layout_height="240dp" />
+        <ImageView
+            android:id="@+id/head"
+            android:contentDescription="@string/app_name"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/head" />
+        <TextView
+            android:id="@+id/txt_name"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="right|bottom"
+            android:paddingRight="110dp"
+            android:paddingBottom="10dp"
+            android:text="菲儿"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_today"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今天"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+        <FrameLayout
+            android:id="@+id/fl_camera"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/gray"
+            android:layout_toRightOf="@id/tv_today"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/album_camera" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

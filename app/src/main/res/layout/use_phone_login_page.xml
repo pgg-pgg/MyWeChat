@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_choose_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_phone_login_title">
+
+        <TextView
+            android:id="@+id/tv_location_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="国家/地区"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_location_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_location_title"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="中国（+86）"
+            android:textColor="@color/greeny"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_location_title"
+            android:background="#cecece" />
+
+        <TextView
+            android:id="@+id/tv_phone_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_location_title"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="手机号"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edit_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_location_title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_location_title"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:background="@null"
+            android:hint="请填写手机号"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#000"
+            android:textColorHint="#cecece" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_phone_title"
+            android:background="@color/greeny" />
+    </RelativeLayout>
+</LinearLayout>

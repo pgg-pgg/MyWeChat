@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title"/>
+
+    <TextView
+        android:id="@+id/tv_use_default"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="使用默认的背景图片"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@color/white"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cecece"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:id="@+id/tv_change_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="换张背景图片"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@color/white"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cecece"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_sound"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="音效" />
+
+        <ImageView
+            android:id="@+id/iv_set_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/set2" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_say_hello"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="打招呼的人"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@color/white"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cecece"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:id="@+id/tv_shake_history"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="摇到的历史"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@color/white"/>
+    <TextView
+        android:id="@+id/tv_shake_message"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="摇一摇消息"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@color/white"/>
+
+</LinearLayout>

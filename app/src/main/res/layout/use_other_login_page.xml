@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_phone_login_title">
+
+        <TextView
+            android:id="@+id/tv_id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="账号"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edit_id_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/tv_id_title"
+            android:textSize="14sp"
+            android:background="@null"
+            android:hint="请填写微信号/QQ号/邮箱"
+            android:singleLine="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#000"
+            android:textColorHint="#cecece" />
+
+        <View
+            android:id="@+id/view_of_id"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_id_title"
+            android:background="#cecece" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_phone_login_title">
+
+        <TextView
+            android:id="@+id/tv_password_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="密码"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edit_password_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/tv_password_title"
+            android:textSize="14sp"
+            android:background="@null"
+            android:hint="请填写密码"
+            android:password="true"
+            android:singleLine="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#000"
+            android:textColorHint="#cecece" />
+
+        <View
+            android:id="@+id/view_of_password"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_password_title"
+            android:background="#cecece" />
+    </RelativeLayout>
+
+</LinearLayout>

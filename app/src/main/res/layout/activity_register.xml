@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_choose_head_sculpture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_menu_camera" />
+
+        <RelativeLayout
+            android:id="@+id/rl_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/iv_choose_head_sculpture"
+            android:layout_alignBottom="@id/iv_choose_head_sculpture">
+
+            <TextView
+                android:id="@+id/tv_nickname_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/nickname"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edit_nickname_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/tv_nickname_title"
+                android:textSize="14sp"
+                android:background="@null"
+                android:hint="例如：陈晨"
+                android:singleLine="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="#000"
+                android:textColorHint="#cecece" />
+
+            <View
+                android:id="@+id/view_of_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_nickname_title"
+                android:background="#cecece" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_choose_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_nickname">
+
+            <TextView
+                android:id="@+id/tv_country_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/Country"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_country_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="中国（+86）"
+                android:textColor="@color/greeny"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view_of_country"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_country_title"
+                android:background="#cecece" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_choose_country">
+
+            <TextView
+                android:id="@+id/tv_phone_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="手机号"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edit_phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_phone_title"
+                android:layout_marginLeft="36dp"
+                android:textSize="14sp"
+                android:background="@null"
+                android:hint="请填写手机号"
+                android:singleLine="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="#000"
+                android:textColorHint="#cecece" />
+
+            <View
+                android:id="@+id/view_of_phone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_phone_title"
+                android:background="#cecece" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_phone_num">
+
+            <TextView
+                android:id="@+id/tv_password_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="密码"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edit_password_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/tv_password_title"
+                android:textSize="14sp"
+                android:background="@null"
+                android:hint="请填写密码"
+                android:password="true"
+                android:singleLine="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="#000"
+                android:textColorHint="#cecece" />
+
+            <View
+                android:id="@+id/view_of_password"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_password_title"
+                android:background="#cecece" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/rl_password"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_enable_green"
+            android:enabled="false"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="@string/register"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_register"
+            android:paddingTop="7dp"
+            android:textSize="8sp"
+            android:textColor="@color/gray"
+            android:text="@string/register_remarks"/>
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

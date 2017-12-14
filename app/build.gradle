@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.pgg.mywechatem"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'com.lzy.widget:imagepicker:0.6.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/glide-3.7.0.jar')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/picasso-2.5.2.jar')
+    compile files('libs/zxing-1.6.jar')
+    compile files('libs/easemobchat_2.1.5.jar')
+    compile files('libs/universal-image-loader-1.8.7-snapshot-with-sources.jar')
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile files('libs/fastjson-1.2.2.jar')
+    compile files('libs/fastjson-1.2.2-sources.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile files('libs/baidumapapi_v3_2_0.jar')
+    compile files('libs/locSDK_3.3.jar')
+}

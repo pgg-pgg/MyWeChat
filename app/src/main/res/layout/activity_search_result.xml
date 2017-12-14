@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/bar_color"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="48.0dip">
+        <ImageButton
+            android:id="@+id/ib_exit_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_menu_exit_left"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"/>
+        <View
+            android:id="@+id/vertical_line"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#000"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/ib_exit_01"/>
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/vertical_line"
+            android:background="@null"
+            android:drawableLeft="@drawable/icon_search"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:hint="搜索"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:drawablePadding="10dp"
+            android:textSize="14dp"
+            android:layout_marginRight="30dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/greeny"
+            android:layout_below="@id/et_search"
+            android:layout_toRightOf="@id/vertical_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_add_friend"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/iv_add_friend_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_add_friend"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/tv_search_friend_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_add_friend_icon"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="搜索："
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_search_friend_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_search_friend_label"
+            android:layout_centerVertical="true"
+            android:textColor="@color/greeny"/>
+    </RelativeLayout>
+</LinearLayout>

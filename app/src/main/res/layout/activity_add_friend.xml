@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@color/white">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_search_green"
+                android:hint="微信号/QQ号/手机号"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:drawablePadding="15dp"
+                android:id="@+id/et_search"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/greeny"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/et_search"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_my_wechat_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="我的微信号：pgg340711"/>
+        <RelativeLayout
+            android:id="@+id/rl_add_friend_leida"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray" />
+
+            <ImageView
+                android:id="@+id/iv_add_friend_leida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/add_friend_leida" />
+
+            <TextView
+                android:id="@+id/tv_add_friend_leida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/iv_add_friend_leida"
+                android:text="雷达加朋友"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_add_friend_leida"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/iv_add_friend_leida"
+                android:text="添加身边的朋友"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/gray" />
+        <RelativeLayout
+            android:id="@+id/rl_add_friend_face2face"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_add_friend_face2face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/add_friend_face2face" />
+
+            <TextView
+                android:id="@+id/tv_add_friend_face2face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/iv_add_friend_face2face"
+                android:text="面对面建群"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_add_friend_face2face"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/iv_add_friend_face2face"
+                android:text="与身边的朋友进入同一个群聊"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/gray" />
+        <RelativeLayout
+            android:id="@+id/rl_add_friend_saoyisao"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_add_friend_saoyisao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/add_friend_saoyisao" />
+
+            <TextView
+                android:id="@+id/tv_add_friend_saoyisao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/iv_add_friend_saoyisao"
+                android:text="扫一扫"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_add_friend_saoyisao"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/iv_add_friend_saoyisao"
+                android:text="扫描二维码名片"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/gray" />
+        <RelativeLayout
+            android:id="@+id/rl_add_friend_addphone"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_add_friend_addphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/add_friend_addphone" />
+
+            <TextView
+                android:id="@+id/tv_add_friend_addphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/iv_add_friend_addphone"
+                android:text="手机联系人"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_add_friend_addphone"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/iv_add_friend_addphone"
+                android:text="添加或邀请通讯录中的朋友"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/gray" />
+        <RelativeLayout
+            android:id="@+id/rl_add_friend_public"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_add_friend_public"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/add_friend_public" />
+
+            <TextView
+                android:id="@+id/tv_add_friend_public"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/iv_add_friend_public"
+                android:text="公众号"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_add_friend_public"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/iv_add_friend_public"
+                android:text="获取更多资讯和服务"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/gray" />
+    </LinearLayout>
+
+</LinearLayout>

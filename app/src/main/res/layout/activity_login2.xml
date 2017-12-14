@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_login2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ImageButton
+            android:id="@+id/menu_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/menu_left2" />
+
+        <ImageButton
+            android:id="@+id/menu_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/menu_push" />
+
+        <TextView
+            android:id="@+id/tv_phone_login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu_exit"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:text="手机号登录"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <FrameLayout
+            android:id="@+id/fl_container2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_phone_login_title">
+
+            <!--<include-->
+                <!--android:id="@+id/use_phone_login_page2"-->
+                <!--layout="@layout/use_phone_login_page2" />-->
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_msg_login_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fl_container2"
+            android:layout_marginTop="20dp"
+            android:text="用短信验证码登录"
+            android:textColor="@color/c7"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_msg_login_method"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_bg_green"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="@string/login"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

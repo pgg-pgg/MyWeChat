@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_phone_login_title">
+
+        <TextView
+            android:id="@+id/tv_phone_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="手机号"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_msg_phone_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/tv_phone_title"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="+8618829591066"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/view_of_id"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_phone_title"
+            android:background="#cecece" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_msg_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_phone_login_title">
+
+        <TextView
+            android:id="@+id/tv_msg_password_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="验证码"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_get_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/btn_bg_get_msg"
+            android:text="获取验证码"
+            android:textColor="@color/black"
+            android:textSize="8dp" />
+
+        <EditText
+            android:id="@+id/edit_msg_password_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_toLeftOf="@id/btn_get_msg"
+            android:layout_toRightOf="@id/tv_msg_password_title"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请填写验证码"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="#cecece"
+            android:textSize="14sp" />
+
+
+        <View
+            android:id="@+id/view_of_msg_password"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_msg_password_title"
+            android:background="@color/greeny" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="卡"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/card_box_card"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="查看全部（0）"
+            android:textSize="14sp"
+            android:id="@+id/tv_see_all_card"
+            android:textColor="#0061b0"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_friend_piao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="朋友的优惠券"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/card_box_friend"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_my_piao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="我的票券"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/card_box_piao"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

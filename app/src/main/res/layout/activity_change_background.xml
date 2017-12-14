@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title"/>
+
+    <TextView
+        android:id="@+id/tv_from_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="从手机相册选择"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@color/white"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cecece"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:id="@+id/tv_play_photo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="拍一张"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@color/white"/>
+
+
+    <TextView
+        android:id="@+id/tv_from_net"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="摄影师作品"
+        android:drawableRight="@drawable/right"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@color/white"/>
+
+</LinearLayout>

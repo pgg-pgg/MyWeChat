@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_dibs" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="我的零钱"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="￥10000.00"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"/>
+
+
+    <Button
+        android:id="@+id/btn_add_money"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_bg_green"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="充值"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/btn_tixian"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_bg_gray1"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="提现"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="零钱理财，让零钱安稳转收益"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="#3f81c1"
+        android:drawableLeft="@drawable/dibs_licaitong"
+        android:drawablePadding="5dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="常见问题"
+                android:textColor="#3f81c1"
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_problem" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本服务由财付通提供"
+                android:textColor="@color/gray"
+                android:textSize="10sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tv_problem"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
